@@ -6,5 +6,7 @@ export default abstract class Carro {
         protected velocidadeAtual: number = 0,
     ){}
 
-    
+    get velocidade(): number {
+        return this.velocidadeAtual;
+    }
 }
