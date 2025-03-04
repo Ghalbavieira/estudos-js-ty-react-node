@@ -1,7 +1,8 @@
 import React from "react"
-import * as styles from "./post.css";
+import styles from './post.module.css';
+import {Comments} from "../comments/comments"
 
-export default function Post(props)  {
+export function Post(props)  {
    
     return (
         <article className={styles.post}>
@@ -13,8 +14,10 @@ export default function Post(props)  {
                         alt="Imagem do avatar" 
                     
                     />
-                    <h4>{props.author}</h4>
-                    <p>{props.content}</p>
+                    <div className={styles.authorInfo}>
+                        <h4>{props.author}</h4>
+                        <p>Web Developer</p>
+                    </div>
                 </div>
 
                 <time title=" " dateTime="">Publicado há 1h</time>
@@ -30,6 +33,21 @@ export default function Post(props)  {
                     <a>#novoprojeto</a> 
                     <a>#nlw</a> 
                 </p>
+            </div>
+
+            <form className={styles.comentForm}>
+                <h4>Deixe seu Comentário</h4>
+                <textarea placeholder="Deixe seu Comentário"/>
+
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+            </form>
+
+            <div className={styles.comentList}>
+                <Comments/>
+                <Comments/>
+                <Comments/>
             </div>
         </article>
     )
