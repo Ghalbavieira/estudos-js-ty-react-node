@@ -1,6 +1,7 @@
 import React from "react"
 import styles from './post.module.css';
 import {Comments} from "../comments/comments"
+import {Avatar} from "../avatar/avatar"
 
 export function Post(props)  {
    
@@ -8,12 +9,7 @@ export function Post(props)  {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img 
-                        className={styles.avatar}
-                        src="https://github.com/ghalbaVieira.png" 
-                        alt="Imagem do avatar" 
-                    
-                    />
+                    <Avatar hasBorder src="https://github.com/ghalbaVieira.png"/>
                     <div className={styles.authorInfo}>
                         <h4>{props.author}</h4>
                         <p>Web Developer</p>

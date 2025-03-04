@@ -4,7 +4,7 @@ import igniteSimbol from "../../assets/Ignite-simbol.svg";
 
 export function Header(){
     return (
-        <header>
+        <header className="header">
             <img src={igniteSimbol} alt="logo" />
             <h2>Ignite Feed</h2>
         </header>

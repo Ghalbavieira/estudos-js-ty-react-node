@@ -1,4 +1,4 @@
-header {
+.header {
     background: var(--gray-800);
     padding: 1.25rem 0;
     display: flex;
