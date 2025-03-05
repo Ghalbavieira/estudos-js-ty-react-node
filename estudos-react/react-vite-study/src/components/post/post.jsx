@@ -20,13 +20,13 @@ export function Post({author, content, publishAt})  {
         addSuffix: true,
     })
 
-    function handleCreateNewComment(){
+    function handleCreateNewComment(event){
         event.preventDefault()
         setCommentText([...commentText, newCommentTexts])
         setNewCommentTexts('');
     }
 
-    function handleNewCommentChange(){
+    function handleNewCommentChange(event){
         setNewCommentTexts(event.target.value);
     }
 
@@ -71,10 +71,10 @@ export function Post({author, content, publishAt})  {
             </form>
 
             <div className={styles.comentList}>
-                {commentText.map(comment => {
+                {commentText.map(comments  => {
                     return (
                         <Comments 
-                            content={commentText}
+                            content={comments}
                         />
                     )
                 })}
