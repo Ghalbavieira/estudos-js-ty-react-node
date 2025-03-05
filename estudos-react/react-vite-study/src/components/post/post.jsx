@@ -24,11 +24,10 @@ export function Post({author, content, publishAt})  {
         event.preventDefault()
         setCommentText([...commentText, newCommentTexts])
         setNewCommentTexts('');
-
     }
 
     function handleNewCommentChange(){
-        setNewCommentTexts(event.target.commentText.value)
+        setNewCommentTexts(event.target.value);
     }
 
     return (
