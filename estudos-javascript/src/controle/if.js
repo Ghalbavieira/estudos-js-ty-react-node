@@ -6,3 +6,9 @@ if(condicional){
 } else {
     // Código executado se a condição for falsa
 }
+
+
+// condiçao ternario
+
+let age = 24
+console.log(age >= 18 ? "vc pode" : "não pode")
