@@ -189,3 +189,11 @@ input2.addEventListener('input', (event) => {
 
     console.log(value);
  })
+
+
+
+ // substituir parte do texto
+
+ let message = "estou okay"
+ // replace é 2 parametros, primeiro parametro é qual parte do texto vou alterar e o segundo parametro é a nova palavra
+console.log(message.replace("okay", "bem"));
