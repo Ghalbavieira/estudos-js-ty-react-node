@@ -101,3 +101,54 @@ for (let index in student) {
     //exibe o conteudo da propriedade
     console.log(student[index])
 }
+
+
+
+/* FOR of - itera sobre os valores de um objeto iterável 
+    ela percorre em cima do valor, um objeto iterável(objeto que pode ser percorrido)
+*/
+
+let students = ['ana', 'isa', 'sophie']
+
+// o ideal é que tipo a variavel é plural e a variavel auxiliar sendo singular 
+// fica facil de ler, (aqui tem um estudante da lista de estudantes)
+for (let student of students) {
+    console.log(student)
+}
+
+let user = [
+    {
+        name: 'Ghalba',
+        email: 'email@email.com',
+    }
+]
+
+for (let value of user ){
+    console.log(value.name)
+}
+
+
+
+
+/**Break interrompe o loop, enquanto o continue pula para a proxima iteração
+ * 
+ * CONTINUE encerra (pula) a execução das intrucoes na iteração atual 
+ * e continua a execução do loop com a proxima iteração
+ */
+
+for (let i = 0; i < 10; i++){
+    if(i === 5){
+        break
+    }
+
+    console.log(i)
+}
+
+
+for (let i = 0; i < 10; i++){
+    if(i === 5){
+        continue
+    }
+
+    console.log(i)
+}
